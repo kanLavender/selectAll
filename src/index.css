@@ -1,0 +1,46 @@
+.panel{
+    position:relative;
+    width :200px;
+}
+.searchInfo {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.clearIcon {
+    margin-left: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.caret-icon {
+    margin-left: 5px;
+}
+
+.caret-icon.open {
+    transform: rotate(180deg);
+}
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.select-options li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.select-options li.selected {
+    background-color: #e9e9e9;
+}
