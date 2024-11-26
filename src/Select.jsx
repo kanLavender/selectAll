@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import styles from './index.css';
+import styles from'./index.less';
 
-interface SelectProps {
-    options:string[];
-    mode:string;
-    placeholder:string;
+// interface SelectProps {
+//     options:string[];
+//     mode:string;
+//     placeholder:string;
 
-}
+// }
 
-const Select = (props:SelectProps) => {
+const Select = (props) => {
     const {mode,options, placeholder} = props
     const [selectItem, setSelectItem] = useState(mode ==='muti' ? [] : null);
     const [open, setOpen] = useState(false);
     
-    const handleSearch = (option:string) =>{
+    const handleSearch = (option) =>{
         if(mode === 'muti'){
             const selectedOptions = selectItem.includes(option)? selectItem.filter(item => item !== option) : [...selectItem, option];
             setSelectItem(option);
