@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 import styles from'./index.less';
 
-// interface SelectProps {
-//     options:string[];
-//     mode:string;
-//     placeholder:string;
-
-// }
-
 const Select = (props) => {
     const {mode,options, placeholder} = props
-    const [selectItem, setSelectItem] = useState(mode ==='muti' ? [] : null);
+    const [selectItem, setSelectItem] = useState(mode ==='multi' ? [] : null);
     const [open, setOpen] = useState(false);
     
     const handleSearch = (option) =>{
-        if(mode === 'muti'){
+        if(mode === 'multi'){
             const selectedOptions = selectItem.includes(option)? selectItem.filter(item => item !== option) : [...selectItem, option];
             setSelectItem(option);
         }else{
@@ -23,7 +16,7 @@ const Select = (props) => {
     }
     
     const onClear = ()=>{
-        setSelectItem(mode ==='muti' ? [] : null);
+        setSelectItem(mode ==='multi' ? [] : null);
     }
     
     const onOpen = ()=>{
@@ -33,9 +26,8 @@ const Select = (props) => {
     return (
         <div className={styles.panel}>
             <div className={styles.searchInfo} onClick={onOpen}>
-                (mode === 'muti'? selectItem?.join(","): selectItem): placeholder
+                (mode === 'multi'? selectItem?.join(","): selectItem): placeholder
                 <span className={styles.clearIcon} onClick={onClear}>x</span>
-                //添加清除的icon
             </div>
             {open && (
                 <ul className={styles.options}>
