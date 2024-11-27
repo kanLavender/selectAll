@@ -1,8 +1,7 @@
 .panel {
   position: relative;
   width: 200px;
-  height: 100px;
-  border: 1px solid blue;
+  margin:16px;
 }
 .searchInfo {
   padding: 10px;
