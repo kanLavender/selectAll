@@ -59,3 +59,27 @@
   border-top: 5px solid #999;
   transition: transform 0.2s ease-in-out;
 }
+.clearImg{
+    width:20px;
+    height:20px;
+    background-image: url("../src/assets/close.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.dropDownImg{
+    width:12px;
+    height:12px;
+    background-image: url("../src/assets/dropdown.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.searchImg{
+    width:12px;
+    height:12px;
+    background-image: url("../src/assets/search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
