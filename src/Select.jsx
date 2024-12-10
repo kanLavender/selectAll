@@ -66,7 +66,7 @@ const Select = (props) => {
   //TODO:出现搜索框但是没有光标闪烁，无法执行搜索
   return (
     <div className='panel'>
-      <div className={`searchInfo ${open ? styles.open : ''}`} onClick={handleInputFocus} onBlur={handleInputBlur} >
+      <div className={`searchInfo ${open ? styles.open : ''}`} onClick={onOpen} onBlur={handleInputBlur} onFocus={handleInputFocus}>
         {selectItem && (mode === 'multi' ? selectItem.join(", ") : selectItem) || placeholder}
         {showClear ? (<span className='clearImg' onClick={onClear}></span>) :
             (open ? (<span className='searchImg' onClick = {(e)=>onSearch(e.target.value)} ></span>) : (<span className='dropDownImg'></span>))} 
