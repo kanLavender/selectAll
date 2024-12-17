@@ -16,10 +16,18 @@
 .searchInfoText{
     color:#BFC4CC;
 }
-.searchInfo.open {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.openSearch {
+  padding: 10px;
+  border-style:solid;
+  border-color: #418bfa;
+  box-shadow: 0 0 2px 0 rgba(33, 113, 255, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
 }
+
 .searchInfo .clearIcon {
   color: #999;
   cursor: pointer;
