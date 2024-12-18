@@ -18,7 +18,6 @@
 |onChange|选项改变时触发的事件|Function|() => {}|
 |onSearch|搜索时触发的事件|Function|() => {}|
 |onClear|清除选项时触发的事件|Function|() => {}|
-
 |virtualScroll|是否开启虚拟滚动|Boolean|false|
 |autoDropDown|是否自动展开下拉|Boolean|false|
 |closeOnSelect|单选模式下选择后关闭下拉|Boolean|true|
